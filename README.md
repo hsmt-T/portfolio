@@ -1,5 +1,5 @@
 # portfolio
 
-## frontend/ React
+## frontend / React
 
-## backend/ Go
+## backend / Go
