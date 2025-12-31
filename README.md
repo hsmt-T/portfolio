@@ -1,5 +1,7 @@
 # portfolio
 
-## frontend / React
+## frontend  
+### TS/React
 
-## backend / Go
+## backend 
+### Go/Echo
