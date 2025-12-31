@@ -1,0 +1,10 @@
+# Air
+tmp/
+
+# env
+.env
+
+# Go
+vendor/
+*.exe
+*.out
