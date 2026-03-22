@@ -1,14 +1,14 @@
+import './App.css'
+import Footer from "./components/layout/Footer/Footer"
 import Header from "./components/layout/Header/Header"
-import Top from "./components/sections/Top"
-import Button from "./components/ui/Button/Button"
+import Top from "./components/sections/Top/Top"
 
 function App() {
   return (
     <>
       <Header></Header>
-      <Button variant="submit">
-        send
-      </Button>
+      <Top/>
+      <Footer/>
     </>
   )
 }

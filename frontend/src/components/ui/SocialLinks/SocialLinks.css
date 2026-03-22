@@ -1,0 +1,27 @@
+.container {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    width: 60px;
+    height: 60px;
+
+    background-color: #C0D3FF; 
+    color: black;
+
+    font-size: 28px;
+    border-radius: 12px; 
+    text-decoration: none;
+
+    transition: 0.2s;
+}
+
+.icon:hover {
+    transform: scale(1.1);
+}
