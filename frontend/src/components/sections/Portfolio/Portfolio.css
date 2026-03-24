@@ -1,0 +1,7 @@
+.portfolio {
+    background-color: #C0D3FF;
+    height: 100vh; 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
