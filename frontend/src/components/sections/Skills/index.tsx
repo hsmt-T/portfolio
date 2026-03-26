@@ -7,7 +7,7 @@ const Skills = () => {
     return(
         <section className="skills">
             <SectionTitle title="skills"/>
-            <TechCard name="React" iconUrl={noImg} level={3} experience={2} />
+            <TechCard name="React" iconUrl={noImg} level={3}  />
         </section>
     )
 }

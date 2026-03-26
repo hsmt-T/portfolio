@@ -7,6 +7,9 @@
     flex-direction: column;
     align-items: center;
 }
+.links{
+    margin-top: 45px;
+}
 
 .profile-container {
     display: flex;

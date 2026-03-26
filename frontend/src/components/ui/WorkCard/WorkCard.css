@@ -1,0 +1,144 @@
+.work-card {
+  display: flex;
+  background-color: #ffffff;
+  border-radius: 48px; /* より丸みをもたせて柔らかく */
+  padding: 64px;      /* 余白をさらに広げ、高級感のあるレイアウトに */
+  max-width: 1200px;  /* 幅を広げました（900px → 1200px） */
+  margin: 40px auto;
+  gap: 60px;          /* 左右セクションの間隔を拡大 */
+  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.04);
+  font-family: "Noto Sans JP", sans-serif;
+}
+
+/* --- コンテンツ（左側） --- */
+.work-card__content {
+  flex: 1.4; /* テキストエリアを少し広く確保 */
+  display: flex;
+  flex-direction: column;
+}
+
+.work-card__title {
+  font-size: 2rem;    /* タイトルを大きく強調 */
+  font-weight: 800;
+  margin-bottom: 48px;
+  color: #1a1a1a;
+  letter-spacing: 0.05em; /* 文字間隔を広げて読みやすく */
+}
+
+.work-card__section {
+  margin-bottom: 32px; /* 各項目の間隔を広げました */
+}
+
+.work-card__label {
+  display: block;      /* ラベルを独立させてゆとりを出す（好みでinlineに戻してもOK） */
+  font-weight: bold;
+  font-size: 1.2rem;
+  margin-bottom: 8px;
+  color: #333;
+}
+
+.work-card__description {
+  font-size: 1.15rem;
+  color: #555;
+  line-height: 1.8;    /* 行間をさらに広げました */
+  margin-bottom: 24px;
+}
+
+.work-card__value {
+  font-size: 1.15rem;
+  color: #444;
+  letter-spacing: 0.02em;
+}
+
+.work-card__link {
+  color: #2563eb;
+  font-size: 1.1rem;
+  text-decoration: none;
+  border-bottom: 1px solid #2563eb; /* 下線との隙間を調整 */
+  padding-bottom: 2px;
+  word-break: break-all;
+  transition: opacity 0.2s;
+}
+
+.work-card__tech-logo-wrapper {
+  width: 48px;  /* 32pxだと小さすぎるので少し戻しました */
+  height: 48px; 
+  border-radius: 10px;
+  background-color: #f8fafc; /* 枠がわかるように薄いグレーを配置 */
+  border: 1px solid #e2e8f0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  padding: 0; /* 余計な余白を完全に消去 */
+}
+
+.work-card__tech-logo {
+  width: 100%;
+  height: 100%;
+  object-fit: contain; /* 比率を維持 */
+  
+  /* 画像自体に余白がある場合、少し拡大して「いいかんじ」に調整します */
+  transform: scale(1.1); 
+}
+
+/* --- 使用技術セクション（R2画像） --- */
+.work-card__tech-logo-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;       /* ロゴ同士の間隔を拡大 */
+  margin-top: 16px;
+  width: 100%;
+}
+
+/* --- プレビュー画像（右側） --- */
+.work-card__preview {
+  flex: 0.8; 
+  display: flex;
+  align-items: center; /* 中央に配置 */
+  justify-content: center;
+}
+
+.work-card__image-container {
+  width: 100%;
+  max-width: 380px;      /* 巨大化を防ぐ */
+  aspect-ratio: 16 / 10;
+  border-radius: 24px;
+  background-color: #f8fafc; /* 画像がない時や、containの時の隙間を埋める色 */
+  overflow: hidden;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.05);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.work-card__image {
+  width: 100%;
+  height: 100%;       
+  /* ★重要：ロゴなどの場合は contain にすると全体が収まります */
+  /* スクリーンショットなら cover でもOKですが、今は一旦 contain で試してみてください */
+  object-fit: contain; 
+  
+  /* 画像が枠にベタつきすぎるなら padding を入れる */
+  padding: 20px; 
+}
+
+/* --- モバイル対応 --- */
+/* @media (max-width: 1024px) {
+  .work-card {
+    max-width: 90%;
+    padding: 40px;
+  }
+}
+
+@media (max-width: 768px) {
+  .work-card {
+    flex-direction: column-reverse;
+    padding: 32px;
+    gap: 32px;
+  }
+  .work-card__title {
+    font-size: 1.6rem;
+    text-align: left;
+  }
+} */

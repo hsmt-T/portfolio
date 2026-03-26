@@ -1,6 +1,7 @@
 import SectionTitle from "../../ui/SectionTitle/SectionTitle";
 import "./Profile.css";
 import profileImg from "../../../assets/img/noImg.png"; 
+import SocialLinks from "../../ui/SocialLinks/SocialLinks";
 
 const Profile = () => {
     return (
@@ -19,6 +20,9 @@ const Profile = () => {
                 <div className="profile-image-wrapper">
                     <img src={profileImg} alt="プロフィール写真"/>
                 </div>
+            </div>
+            <div className="links">
+                <SocialLinks/>
             </div>
         </section>
     );
