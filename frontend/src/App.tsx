@@ -1,6 +1,7 @@
 import './App.css'
 import Footer from "./components/layout/Footer/Footer"
 import Header from "./components/layout/Header/Header"
+import Form from './components/sections/Form'
 import Portfolio from './components/sections/Portfolio'
 import Profile from './components/sections/Profile'
 import Skills from './components/sections/Skills'
@@ -16,6 +17,7 @@ function App() {
       <Portfolio/>
       <Works/>
       <Skills/>
+      <Form/>
       <Footer/>
     </>
   )

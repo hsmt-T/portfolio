@@ -6,17 +6,19 @@
 }
 
 .btn-submit {
-    margin-top: 200px;
     background: #94B4FF;
     color: white;
-    width: 200px;
-    height: 50px;
+    width: 260px;
+    height: 60px;
     border-radius: 999px;
+    font-size: 18px;
 
     display: flex;
     align-items: center;
     justify-content: center;
 }
+
 .btn-submit:hover {
     background: #7fa3f5;
+    transform: scale(1.03);
 }
