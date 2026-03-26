@@ -5,6 +5,7 @@ import Portfolio from './components/sections/Portfolio'
 import Profile from './components/sections/Profile'
 import Skills from './components/sections/Skills'
 import Top from "./components/sections/Top/Top"
+import Works from './components/sections/Works'
 
 function App() {
   return (
@@ -13,6 +14,7 @@ function App() {
       <Top/>
       <Profile/>
       <Portfolio/>
+      <Works/>
       <Skills/>
       <Footer/>
     </>
