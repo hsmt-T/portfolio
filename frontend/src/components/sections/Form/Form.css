@@ -1,0 +1,81 @@
+.form {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #f4f7ff;
+    padding: 40px 20px;
+    gap: 40px;
+    text-align: center;
+}
+
+.form-text {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.form-text p {
+    margin: 4px 0;
+    line-height: 1.8;
+    font-size: 0.95rem;
+    color: #333;
+}
+
+.form-content {
+    background-color: #fff;
+    padding: 60px 80px;
+    width: 100%;
+    max-width: 800px;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2); 
+}
+
+.form-row {
+    display: flex;
+    gap: 40px;
+    width: 100%;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    flex: 1;
+}
+
+.form-group label {
+    color: #94B4FF;
+    font-size: 0.85rem;
+    font-weight: bold;
+    margin-bottom: 12px;
+}
+
+.form-group input,
+.form-group textarea {
+    width: 100%;
+    border: none;
+    border-bottom: 1px solid #ccc;
+    padding: 8px 0;
+    outline: none;
+    background: transparent;
+    transition: border-color 0.3s;
+}
+
+.form-group input:focus,
+.form-group textarea:focus {
+    border-bottom: 1px solid #94B4FF;
+}
+
+.full-width {
+    width: 100%;
+}
+
+.form-group textarea {
+    resize: none;
+}
