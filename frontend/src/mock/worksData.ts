@@ -1,4 +1,4 @@
-import noImg from "../assets/img/noImg.png"
+import noImg from "../assets/img/Noimg.jpg"
 
 export const worksData = [
     {

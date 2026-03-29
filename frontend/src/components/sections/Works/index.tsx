@@ -1,4 +1,4 @@
-import SectionTitle from "../../ui/SectionTitle/SectionTitle";
+import SectionTitle from "../../ui/SectionTitle";
 import WorkCard from "../../ui/WorkCard";
 import { worksData } from "../../../mock/worksData";
 import "./Works.css";

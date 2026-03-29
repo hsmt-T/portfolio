@@ -1,4 +1,4 @@
-import SocialLinks from "../../ui/SocialLinks/SocialLinks"
+import SocialLinks from "../../ui/SocialLinks"
 import "./Footer.css"
 
 const Footer = () => {

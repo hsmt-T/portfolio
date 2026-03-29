@@ -1,4 +1,4 @@
-import SectionTitle from "../../ui/SectionTitle/SectionTitle";
+import SectionTitle from "../../ui/SectionTitle";
 import "./Portfolio.css"
 
 const Portfolio = () => {

@@ -1,7 +1,7 @@
 import TechCard from "../../ui/TechCard"
 import "./Skills.css"
-import noImg from "../../../assets/img/noImg.png"; 
-import SectionTitle from "../../ui/SectionTitle/SectionTitle";
+import noImg from "../../../assets/img/Noimg.jpg"; 
+import SectionTitle from "../../ui/SectionTitle";
 
 const Skills = () => {
     return(
