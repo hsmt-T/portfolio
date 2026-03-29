@@ -4,7 +4,7 @@ import "./Form.css"
 
 const Form = () => {
     return (
-        <section className="form">
+        <section className="form" id="form">
             <SectionTitle title="Form"/>
             <div className="form-text">
                 <p>最後までご覧いただきありがとうございます。</p>

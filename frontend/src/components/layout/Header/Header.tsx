@@ -8,7 +8,7 @@ const Header = ()=> {
                 <a href="#profile">プロフィール</a>
                 <a href="#portfolio">ポートフォリオ</a>
                 <a href="#message">メッセージ</a>
-                <a href="#from">フォーム</a>
+                <a href="#form">フォーム</a>
             </nav>
         </header>
     )

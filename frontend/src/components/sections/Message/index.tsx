@@ -3,7 +3,7 @@ import "./Message.css"
 
 const Message = () => {
     return (
-        <section className="message">
+        <section className="message" id="message">
             <SectionTitle title="Message" />
             <div className="message-inner">
                 <p>ただコードを書くのではなく</p>

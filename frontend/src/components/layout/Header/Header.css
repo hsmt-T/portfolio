@@ -3,6 +3,7 @@
     top: 0;
     left: 0;
     width: 100%;
+    transition: all 0.3s ease;
 
     z-index: 9999; 
     
@@ -20,10 +21,28 @@
 }
 
 .nav a {
+    position: relative;
     text-decoration: none;
     color: black;
     font-weight: bold;
+    transition: transform 0.2s ease, color 0.2s ease;
 }
+
 .nav a:hover {
-    color: #94B4FF;
+    transform: translateY(-4px);
+}
+
+.nav a::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -4px;
+    width: 0%;
+    height: 2px;
+    background-color: #94B4FF;
+    transition: width 0.3s ease;
+}
+
+.nav a:hover::after {
+    width: 100%;
 }

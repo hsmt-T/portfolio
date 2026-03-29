@@ -5,7 +5,7 @@ import SocialLinks from "../../ui/SocialLinks/SocialLinks";
 
 const Profile = () => {
     return (
-        <section className="profile">
+        <section className="profile" id="profile">
             <SectionTitle title="Profile"/>
             
             <div className="profile-container">
