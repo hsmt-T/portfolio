@@ -1,0 +1,24 @@
+.message {
+    background-color: #d1dcf7;
+    min-height: 100vh; /* ← heightよりこっちが安全 */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 40px 50px;
+}
+
+.message-inner {
+    margin-top: 60px;
+    max-width: 800px;
+}
+
+.message-inner p {
+    text-align: center;
+    line-height: 1.8;
+    margin-bottom: 16px;
+}
+
+.spacer {
+    margin-top: 70px;   /* セクション区切り */
+}
