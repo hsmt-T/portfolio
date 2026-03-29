@@ -1,6 +1,5 @@
 import React from 'react';
-// noImgをインポート（パスはプロジェクトの構造に合わせて調整してください）
-import noImg from "../../../assets/img/noImg.png"; 
+import noImg from "../../../assets/img/Noimg.jpg"; 
 import "./WorkCard.css";
 
 // APIから返ってくるデータの型定義
@@ -9,8 +8,8 @@ interface WorkData {
   description: string;
   role: string;
   githubUrl: string;
-  imageUrl?: string; // 画像がない場合を考慮してOptionalに
-  techLogos?: string[]; // ロゴ配列がない場合を考慮してOptionalに
+  imageUrl?: string; 
+  techLogos?: string[];
 }
 
 interface WorkCardProps {
@@ -18,17 +17,14 @@ interface WorkCardProps {
 }
 
 const WorkCard: React.FC<WorkCardProps> = ({ data }) => {
-  // プレビュー画像のURLを決定（データがなければnoImgを使用）
   const previewImageUrl = data.imageUrl || noImg;
 
-  // 技術ロゴの配列を決定（データがなければnoImgを1つ入れた配列にする）
   const techLogos = data.techLogos && data.techLogos.length > 0 
     ? data.techLogos 
     : [noImg];
 
   return (
     <div className="work-card">
-      {/* 左セクション：テキスト詳細 */}
       <div className="work-card__content">
         <h2 className="work-card__title">{data.title}</h2>
 
@@ -58,7 +54,6 @@ const WorkCard: React.FC<WorkCardProps> = ({ data }) => {
                   <img 
                     src={logoUrl} 
                     alt={`Technology logo ${index + 1}`} 
-                    // noImgが表示されている場合にスタイルを変えるためのクラス
                     className={`work-card__tech-logo ${logoUrl === noImg ? 'is-fallback' : ''}`}
                     loading="lazy"
                   />
@@ -74,7 +69,6 @@ const WorkCard: React.FC<WorkCardProps> = ({ data }) => {
           <img 
             src={previewImageUrl} 
             alt={data.title} 
-            // noImgが表示されている場合にスタイルを変えるためのクラス
             className={`work-card__image ${previewImageUrl === noImg ? 'is-fallback' : ''}`}
           />
         </div>

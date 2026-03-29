@@ -1,7 +1,7 @@
-import SectionTitle from "../../ui/SectionTitle/SectionTitle";
+import SectionTitle from "../../ui/SectionTitle";
 import "./Profile.css";
-import profileImg from "../../../assets/img/noImg.png"; 
-import SocialLinks from "../../ui/SocialLinks/SocialLinks";
+import profileImg from "../../../assets/img/Noimg.jpg"; 
+import SocialLinks from "../../ui/SocialLinks";
 
 const Profile = () => {
     return (

@@ -1,5 +1,5 @@
-import Button from "../../ui/Button/Button";
-import SectionTitle from "../../ui/SectionTitle/SectionTitle";
+import Button from "../../ui/Button";
+import SectionTitle from "../../ui/SectionTitle";
 import "./Form.css"
 
 const Form = () => {
