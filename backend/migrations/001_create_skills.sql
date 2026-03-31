@@ -1,0 +1,6 @@
+CREATE TABLE skills (
+    id INTEGER PRIMARY KEY AUTOINCREMENT,
+    name TEXT NOT NULL,
+    level INTEGER,
+    icon_url TEXT
+);

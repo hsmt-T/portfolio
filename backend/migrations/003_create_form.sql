@@ -1,0 +1,6 @@
+CREATE TABLE form (
+    id INTEGER PRIMARY KEY AUTOINCREMENT,
+    name TEXT NOT NULL,
+    email TEXT,
+    message TEXT NOT NULL
+);
