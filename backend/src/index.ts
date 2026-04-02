@@ -1,7 +1,9 @@
 import { Hono } from 'hono'
 import { cors } from "hono/cors";
+import formRouter from "./presentation/form/formRouter";
+import { Env } from "./types/env";
 
-const app = new Hono()
+const app = new Hono<{ Bindings: Env["Bindings"] }>();
 
 app.use(
     "*",
@@ -13,4 +15,6 @@ app.use(
     })
 );
 
-export default app
+app.route("/form", formRouter);
+
+export default app;
