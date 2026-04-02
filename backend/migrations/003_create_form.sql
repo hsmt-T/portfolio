@@ -3,4 +3,5 @@ CREATE TABLE form (
     name TEXT NOT NULL,
     email TEXT,
     message TEXT NOT NULL
+    created_At TEXT
 );
