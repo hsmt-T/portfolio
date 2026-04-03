@@ -1,4 +1,4 @@
-import { Work, IWorkRepository } from "../../domain/works";
+import { IWorkRepository } from "../../domain/works";
 
 export class FindAllWorks {
     constructor(private workRepo: IWorkRepository) {}
