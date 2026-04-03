@@ -9,5 +9,5 @@ export interface Work {
 }
 
 export interface IWorkRepository {
-    findAll():Promise<void>
+    findAll():Promise<Work[]>
 }

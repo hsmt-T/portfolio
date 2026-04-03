@@ -8,7 +8,7 @@ export const worksControler = async (c: Context<{Bindings: Env["Bindings"]}>) =>
         const repo = new D1WorksRepository(c.env.DB);
         const useCase = new FindAllWorks(repo);
         const result = await useCase.execute();
-        return c.json({result}, 200)
+        return c.json(result, 200)
     } catch (e) {
         console.error(e);
         return c.json({ error: "サーバーエラー"}, 500)
