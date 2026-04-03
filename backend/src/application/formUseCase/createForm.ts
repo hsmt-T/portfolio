@@ -5,7 +5,7 @@ export class CreateForm {
 
     async execute(data: { name: string; email: string; message: string }): Promise<void> {
 
-        if (!data.email.includes("@")) {
+        if ( data.email && !data.email.includes("@")) {
             throw new Error("メール形式が不正");
         }
 

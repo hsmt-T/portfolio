@@ -10,7 +10,7 @@ const app = new Hono<{ Bindings: Env["Bindings"] }>();
 app.use(
     "*",
     cors({
-    origin: ["http://localhost:3000", "http://localhost:5173/"],
+    origin: ["http://localhost:3000", "http://localhost:5173"],
     allowMethods: ["GET", "POST", "PUT", "PATCH", "DELETE"],
     allowHeaders: ["Content-Type"],
     credentials: true,

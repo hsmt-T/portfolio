@@ -1,7 +1,7 @@
 export interface Form {
     id?: number;
     name: string;
-    email: string;
+    email?: string;
     message: string;
     createdAt?: string;
 }
