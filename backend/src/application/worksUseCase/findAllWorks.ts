@@ -1,9 +1,9 @@
-import { IWorkRepository, Work } from "../../domain/works";
+import { IWorkRepository, WorkWithSkills } from "../../domain/works";
 
 export class FindAllWorks {
-    constructor(private workRepo: IWorkRepository) {}
+    constructor(private repo: IWorkRepository) {}
 
-    async execute():Promise<Work[]> {
-        return await this.workRepo.findAll()
+    async execute(): Promise<WorkWithSkills[]> {
+        return await this.repo.findAll();
     }
 }
