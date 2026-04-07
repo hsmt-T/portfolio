@@ -1,27 +1,20 @@
 import React from 'react';
 import noImg from "../../../assets/img/Noimg.jpg"; 
 import "./WorkCard.css";
-
-// APIから返ってくるデータの型定義
-interface WorkData {
-  title: string;
-  description: string;
-  role: string;
-  githubUrl: string;
-  imageUrl?: string; 
-  techLogos?: string[];
-}
+import type { Work } from '../../../types/works';
 
 interface WorkCardProps {
-  data: WorkData;
+  data: Work;
 }
 
 const WorkCard: React.FC<WorkCardProps> = ({ data }) => {
-  const previewImageUrl = data.imageUrl || noImg;
 
-  const techLogos = data.techLogos && data.techLogos.length > 0 
-    ? data.techLogos 
-    : [noImg];
+  const previewImageUrl = data.img_url || noImg;
+
+  const techLogos =
+    data.skills && data.skills.length > 0
+      ? data.skills.map((s) => s.icon_url)
+      : [noImg];
 
   return (
     <div className="work-card">
@@ -41,9 +34,18 @@ const WorkCard: React.FC<WorkCardProps> = ({ data }) => {
 
           <section className="work-card__section">
             <h3 className="work-card__label">Github：</h3>
-            <a href={data.githubUrl} target="_blank" rel="noreferrer" className="work-card__link">
-              {data.githubUrl}
-            </a>
+            {data.github_url ? (
+              <a
+                href={data.github_url}
+                target="_blank"
+                rel="noreferrer"
+                className="work-card__link"
+              >
+                {data.github_url}
+              </a>
+            ) : (
+              <span>なし</span>
+            )}
           </section>
 
           <section className="work-card__section work-card__tech-section">
@@ -51,10 +53,12 @@ const WorkCard: React.FC<WorkCardProps> = ({ data }) => {
             <div className="work-card__tech-logo-list">
               {techLogos.map((logoUrl, index) => (
                 <div key={index} className="work-card__tech-logo-wrapper">
-                  <img 
-                    src={logoUrl} 
-                    alt={`Technology logo ${index + 1}`} 
-                    className={`work-card__tech-logo ${logoUrl === noImg ? 'is-fallback' : ''}`}
+                  <img
+                    src={logoUrl}
+                    alt={`Technology logo ${index + 1}`}
+                    className={`work-card__tech-logo ${
+                      logoUrl === noImg ? "is-fallback" : ""
+                    }`}
                     loading="lazy"
                   />
                 </div>
@@ -66,10 +70,12 @@ const WorkCard: React.FC<WorkCardProps> = ({ data }) => {
 
       <div className="work-card__preview">
         <div className="work-card__image-container">
-          <img 
-            src={previewImageUrl} 
-            alt={data.title} 
-            className={`work-card__image ${previewImageUrl === noImg ? 'is-fallback' : ''}`}
+          <img
+            src={previewImageUrl}
+            alt={data.title}
+            className={`work-card__image ${
+              previewImageUrl === noImg ? "is-fallback" : ""
+            }`}
           />
         </div>
       </div>

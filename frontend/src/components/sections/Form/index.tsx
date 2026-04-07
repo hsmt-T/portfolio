@@ -1,4 +1,4 @@
-import { useSendForm } from "../../../features/form/useSendForm";
+import { useSendForm } from "../../../features/api/form/useSendForm";
 import type { FormEvent } from "react";
 import Button from "../../ui/Button";
 import SectionTitle from "../../ui/SectionTitle";
