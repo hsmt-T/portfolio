@@ -42,7 +42,7 @@
   flex-direction: column;
 }
 
-.tech-card__level {
+.tech-card__name {
   display: flex;
   align-items: center;
   gap: 4px;

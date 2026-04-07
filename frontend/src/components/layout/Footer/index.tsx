@@ -5,7 +5,7 @@ const Footer = () => {
     return (
         <footer className="footer">
             <SocialLinks/>
-            <p className="footer-text footer-inner">© 2026 Hashimoto Portfolio</p>
+            <p className="footer-text footer-inner">© 2026 Hashimoto Tsuyoshi Portfolio</p>
         </footer>
     )
 }
