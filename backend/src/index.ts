@@ -19,6 +19,6 @@ app.use(
 
 app.route("/form", formRouter);
 app.route("/works", worksRouter);
-app.route("skills", skillsRouter)
+app.route("/skills", skillsRouter)
 
 export default app;
