@@ -2,27 +2,25 @@ import "./TechCard.css"
 
 type TechCardProps = {
   name: string
-  iconUrl?: string
-  level: number
+  icon_url?: string
 }
 
 const TechCard = ({
   name,
-  iconUrl,
-  level,
+  icon_url,
 }: TechCardProps) => {
   return (
     <div className="tech-card">
       
       <div className="tech-card__icon">
-        {iconUrl ? (
-          <img src={iconUrl} alt={name} />
+        {icon_url ? (
+          <img src={icon_url} alt={name} />
         ) : (
           <span>{name.slice(0, 2).toUpperCase()}</span>
         )}
       </div>
-      <div className="tech-card__level">
-        Level {level}
+      <div className="tech-card__name">
+        {name}
       </div>
     </div>
   )
