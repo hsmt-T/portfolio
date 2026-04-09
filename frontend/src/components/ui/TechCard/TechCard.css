@@ -12,11 +12,6 @@
   transition: box-shadow 0.2s ease, transform 0.2s ease;
 }
 
-.tech-card:hover {
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-  transform: scale(1.03);
-}
-
 .tech-card__icon {
   width: 46px;
   height: 46px;

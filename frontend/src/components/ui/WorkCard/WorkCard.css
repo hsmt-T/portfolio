@@ -61,11 +61,11 @@
 }
 
 .work-card__tech-logo-wrapper {
-  width: 48px;  /* 32pxだと小さすぎるので少し戻しました */
-  height: 48px; 
-  border-radius: 10px;
+  width: 50px;  /* 32pxだと小さすぎるので少し戻しました */
+  height: 50px; 
+  border-radius: 5px;
   background-color: #f8fafc; /* 枠がわかるように薄いグレーを配置 */
-  border: 1px solid #e2e8f0;
+  border: 1px  #6786af;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -124,7 +124,7 @@
 }
 
 /* --- モバイル対応 --- */
-/* @media (max-width: 1024px) {
+@media (max-width: 1024px) {
   .work-card {
     max-width: 90%;
     padding: 40px;
@@ -141,4 +141,4 @@
     font-size: 1.6rem;
     text-align: left;
   }
-} */
+}
