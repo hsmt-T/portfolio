@@ -3,7 +3,8 @@
 .scroll_down{
   position:absolute;
   bottom:50px;
-  right:50%;
+  left: 50%;              
+  transform: translateX(-50%);
   animation: arrowmove 1s ease-in-out infinite;
 }
 
