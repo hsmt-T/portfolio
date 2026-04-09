@@ -1,6 +1,6 @@
 import { useState } from "react";
 import { postForm } from "./postForm"
-import type { FormInput } from "./types";
+import type { FormInput } from "../../../types/form";
 
 export const useSendForm = () => {
     const [isLoading, setIsLoading] = useState(false);
