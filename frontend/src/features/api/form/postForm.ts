@@ -1,4 +1,4 @@
-import type { FormInput } from "./types";
+import type { FormInput } from "../../../types/form";
 
 export const postForm = async (data: FormInput) => {
     const response = await fetch("http://127.0.0.1:8787/form", {
