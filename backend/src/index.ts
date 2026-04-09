@@ -10,7 +10,7 @@ const app = new Hono<{ Bindings: Env["Bindings"] }>();
 app.use(
     "*",
     cors({
-    origin: ["https://portfolio-49k.pages.dev"],
+    origin: ["https://hashimoto-portfolio.pages.dev"],
     allowMethods: ["GET", "POST", "OPTIONS"],
     allowHeaders: ["Content-Type"],
     credentials: true,
