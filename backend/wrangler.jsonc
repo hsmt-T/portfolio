@@ -1,8 +1,9 @@
 {
 	"$schema": "node_modules/wrangler/config-schema.json",
-	"name": "backend",
+	"name": "portfolio-backend",
 	"main": "src/index.ts",
 	"compatibility_date": "2026-03-15",
+
 	"d1_databases": [
 		{
 			"binding": "DB",
@@ -11,11 +12,28 @@
 			"remote": true
 		}
 	],
+
 	"r2_buckets": [
 		{
 			"bucket_name": "portfolio",
 			"binding": "R2",
 			"remote": true
 		}
-	]
+	],
+
+	"observability": {
+		"enabled": false,
+		"head_sampling_rate": 1,
+		"logs": {
+			"enabled": true,
+			"head_sampling_rate": 1,
+			"persist": true,
+			"invocation_logs": false
+		},
+		"traces": {
+			"enabled": false,
+			"persist": true,
+			"head_sampling_rate": 1
+		}
+	}
 }

@@ -1,5 +1,5 @@
 export type CreateFormRequest = {
     name: string;
-    email: string;
+    email?: string;
     message: string;
 };

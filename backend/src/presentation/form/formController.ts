@@ -6,7 +6,11 @@ import { Env } from "../../types/env";
 
 export const formController = async (c: Context<{ Bindings: Env["Bindings"] }>) => {
     try {
-        const { name, email, message } = await c.req.json<CreateFormRequest>();
+        const body = await c.req.json<CreateFormRequest>();
+
+        const name = body.name;
+        const email = body.email ?? "";
+        const message = body.message;
 
         if (!name || !message) {
             return c.json({ error: "必須項目が不足しています" }, 400);
