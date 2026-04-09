@@ -1,7 +1,8 @@
 import type { FormInput } from "../../../types/form";
+const API_URL = import.meta.env.VITE_API_URL;
 
 export const postForm = async (data: FormInput) => {
-    const response = await fetch("http://127.0.0.1:8787/form", {
+    const response = await fetch(`${API_URL}/form`, {
         method: "POST",
         headers: {
             "Content-Type": "application/json",
