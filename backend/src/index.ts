@@ -10,8 +10,8 @@ const app = new Hono<{ Bindings: Env["Bindings"] }>();
 app.use(
     "*",
     cors({
-    origin: ["http://localhost:3000", "http://localhost:5173"],
-    allowMethods: ["GET", "POST", "PUT", "PATCH", "DELETE"],
+    origin: ["https://portfolio-frontend.ittuyo-hashi244.workers.dev"],
+    allowMethods: ["GET", "POST", "OPTIONS"],
     allowHeaders: ["Content-Type"],
     credentials: true,
     })
