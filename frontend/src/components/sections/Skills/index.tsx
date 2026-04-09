@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react";
 import TechCard from "../../ui/TechCard";
 import "./Skills.css";
-import noImg from "../../../assets/img/Noimg.jpg"; 
+import noImg from "../../../assets/img/NoImg.jpg"; 
 import SectionTitle from "../../ui/SectionTitle";
 import { getSkills } from "../../../features/api/skills/getSkills";
 import type { Skill } from "../../../types/skills";

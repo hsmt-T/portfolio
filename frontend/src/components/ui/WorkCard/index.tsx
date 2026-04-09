@@ -1,5 +1,5 @@
 import React from 'react';
-import noImg from "../../../assets/img/Noimg.jpg"; 
+import noImg from "../../../assets/img/NoImg.jpg"; 
 import "./WorkCard.css";
 import type { Work } from '../../../types/works';
 
