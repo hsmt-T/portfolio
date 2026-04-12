@@ -16,3 +16,14 @@
     width: 100%;
     max-width: 1000px;
 }
+
+@media (max-width: 600px) {
+    .skills {
+        padding: 120px 5px;
+        gap: 45px;
+    }
+
+    .skills-container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}

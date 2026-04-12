@@ -79,3 +79,24 @@
 .form-group textarea {
     resize: none;
 }
+
+@media (max-width: 600px) {
+    .form-content {
+        padding: 20px 16px; 
+        gap: 20px;
+    }
+
+    .form-row {
+        flex-direction: column;
+        gap: 16px;
+    }
+
+    .form-group label {
+        margin-bottom: 8px; 
+    }
+
+    .form-group input,
+    .form-group textarea {
+        padding: 8px 0; 
+    }
+}
