@@ -1,7 +1,6 @@
 import SectionTitle from "../../ui/SectionTitle";
 import "./Portfolio.css"
 import PortfolioItemCard from "../../ui/PortfolioItemCard";
-import ScrollDown from "../../ui/ScrollDown";
 
 const Portfolio = () => {
     return (
@@ -27,7 +26,6 @@ const Portfolio = () => {
                     description="参加させて頂いたイベントを記載しています。"
                 /> */}
             </div>
-            <ScrollDown/>
         </section>
     )
 }
