@@ -16,10 +16,12 @@ const Portfolio = () => {
                     title="Skills" 
                     description="使用経験がある技術を記載しています"
                 />
-                {/* <PortfolioItemCard 
-                    title="Intern" 
+                <PortfolioItemCard 
+                    title="Interns" 
                     description="参加させて頂いたインターンを記載しています。"
                 />
+
+                {/*
                 <PortfolioItemCard 
                     title="Event" 
                     description="参加させて頂いたイベントを記載しています。"
