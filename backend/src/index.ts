@@ -8,6 +8,15 @@ import internsRouter from './presentation/interns/internsRouter';
 
 const app = new Hono<{ Bindings: Env["Bindings"] }>();
 
+// Use Cloudflare's trusted geolocation metadata, never a client-supplied header.
+app.use("*", async (c, next) => {
+    if (c.req.raw.cf?.country !== "JP") {
+        c.header("Cache-Control", "no-store");
+        return c.json({ error: "Access is only available from Japan." }, 403);
+    }
+    await next();
+});
+
 app.use(
     "*",
     cors({
